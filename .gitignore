@@ -1,3 +1,5 @@
 
 .idea/libraries/*
 target/
+
+.idea/workspace.xml

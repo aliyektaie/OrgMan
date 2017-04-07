@@ -14,7 +14,7 @@ public class Session {
     private int id;
 
     @Column(nullable = false, name = "user_id")
-    private String userId;
+    private int userId;
 
     @Column(unique = true, nullable = false, length = 128, name = "identifier")
     private String identifier;
@@ -37,11 +37,11 @@ public class Session {
         this.id = id;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
